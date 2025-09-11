@@ -166,3 +166,12 @@ Por último, obtenemos información sobre las pruebas unitarias, cómo cuantas s
 ```sh
 Test result: OK. Total tests: 1; passed: 1; failed: 0
 ```
+
+sui client call --package 0xf608259b7158fd168251e0ffa7902a982d162e6342befcb74ab0271721add6b7 --module universidad --function crear_universidad --args "UABC" 
+
+sui client call --package 0xf608259b7158fd168251e0ffa7902a982d162e6342befcb74ab0271721add6b7 --module universidad --function agregar_estudiante --args 0x13b3a81b748fdbefe4d8ece9d654e3f7d3a1a3e67ea931be2c59507837a97243 12346 "Navarro" "Electronica" 5 
+
+sui client call --package 0xf608259b7158fd168251e0ffa7902a982d162e6342befcb74ab0271721add6b7 --module universidad --function agregar_materia --args 0x13b3a81b748fdbefe4d8ece9d654e3f7d3a1a3e67ea931be2c59507837a97243 502 "Programacion II" 4 "Menganito"
+
+ sui client call --package 0xf608259b7158fd168251e0ffa7902a982d162e6342befcb74ab0271721add6b7 --module universidad --function borrar__materia --args 0x13b3a81b748fdbefe4d8ece9d654e3f7d3a1a3e67ea931be2c59507837a97243 502
+ 
